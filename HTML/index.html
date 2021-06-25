@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
                 <img src="images/logo1.png" width="125px">
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="">Home</a> </li>
                     <li><a href="">Products</a> </li>
                     <li><a href="">About</a> </li>
@@ -27,6 +28,7 @@
                 </ul>
             </nav>
             <img src="images/cart1.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -43,26 +45,46 @@
     </div>
  </div>
 
-           <!---------Featured Categories------------>
-    
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg">
-                </div>
-            </div>
-        </div>       
-    </div>
+            <!--------------------------Carousel-------------------------->
+
+    <!--------------------------- Swiper Image Carousel ------------------------------------------>
 
 
-        <!---------Featured Products------------>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/img-1.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-2.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-4.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-5.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-6.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-7.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-10.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-8.png.jfif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img-sun.jfif" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+        <!------------------------------Featured Products------------------------------------->
     <div class="small-container">
         <h2 class="title">Featured Products</h2>
         <div class="row">
@@ -76,12 +98,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 500</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-2.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Sports Black Shoes</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -89,12 +111,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 1599</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-3.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Men Joggers</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -102,12 +124,12 @@
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 999</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-4.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>PUMA Blue T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -115,14 +137,54 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 1350</p>
+            </div>
+           
+            <div class="col-4">
+                <img src="images/img-3.png.jfif">
+                <h4>High Quality T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Rs: 2399</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img-jac.jpg">
+                <h4>High Quality Bag</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Rs: 6000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img-sh.jfif">
+                <h4>Colorful Sneakers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Rs: 4999</p>
             </div>
         </div>
+
+        <!-------------------------------------Latest Products---------------------------------->
+
         <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Men Sneakers</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -130,12 +192,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 3999</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-6.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>PUMA Black T-shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -143,12 +205,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 1350</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-7.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>3-Pair Socks</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -156,12 +218,12 @@
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 399</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-8.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Black Chain Watch</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -169,13 +231,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 2500</p>
             </div>
-        </div>
-        <div class="row">
+        
             <div class="col-4">
                 <img src="images/product-9.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Rado Watch</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -183,12 +244,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 50,000</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-10.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Sports Shoes</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -196,12 +257,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 4000</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-11.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Plane Sneakers</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -209,12 +270,12 @@
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 1999</p>
             </div>
 
             <div class="col-4">
                 <img src="images/product-12.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Black Joggers</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -222,12 +283,25 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <p>Rs:500</p>
+                <p>Rs: 1599</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img-nikon.jfif">
+                <h4>Black Nikon Camera</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Rs: 60,000</p>
             </div>
         </div>
     </div>
 
-            <!---------offer-------------->
+            <!-------------------------------------offer------------------------------------>
+
     <div class="offer">
         <div class="small-container">
             <div class="row">
@@ -244,7 +318,8 @@
         </div>
     </div>
     
-    <!-------------------Testimonial---------------->
+    <!---------------------------------------Testimonial------------------------------------->
+
     <div class="testimonial">
         <div class="small-container">
             <div class="row">
@@ -293,7 +368,7 @@
         </div>
     </div>
 
-     <!-------------------Brands---------------->
+     <!--------------------------------Brands---------------------------------------->
 
     <div class="brands">
         <div class="small-container">
@@ -317,7 +392,7 @@
         </div>
     </div>
 
-        <!-------------------Footer----------------> 
+        <!--------------------------------Footer-------------------------------> 
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -355,6 +430,11 @@
             <hr>
             <p class="copyright">Copyright @2021 - CodeHouse Academy</p>
         </div>
-    </div>      
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/app.js"></script>
+    
 </body>
 </html>
