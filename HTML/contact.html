@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,41 +30,62 @@
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
-
-    <!-----------Account Page----------------->
     
-    <div class="account-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/hero.png" width="100%">
-                </div>
-                <div class="col-2">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="login()">Login</span>
-                            <span onclick="register()">Register</span>
-                            <hr id="Indicator">
-                        </div>
+    <!---------------------------contact us-------------->
 
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
-                            <a href="">Forgot Password</a>
-                        </form>
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Register</button>
-                        </form>
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            
+        </div>
+        <div class="container" id="info">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Street No: 3408 Dhapakhel, Lalitpur <br> Kathmandu, Nepal </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+977 986-787-3849 </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>arjun.acharya@slcc.edu.np</p>
                     </div>
                 </div>
             </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
         </div>
+    </section>
 
-    </div>
+
 
         <!--------------------------------Footer-------------------------------> 
     <div class="footer">
