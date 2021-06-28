@@ -628,16 +628,12 @@ form a{
 
    /*-------------------Contact Us-----------*/
 .contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(https://images.unsplash.com/photo-1572635148687-307f8ca9b737?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2hpdGUlMjAlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
-    background-size: cover;
-}   
+    background: radial-gradient(#00bfff, #fff);
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
 
 .contact .content{
     max-width: 800px;
@@ -651,8 +647,8 @@ form a{
 }
 
 .contact .content p{
-    font-weight: 300;
-    color: #fff;
+    padding: 50px;
+    
 }
 
 
@@ -674,6 +670,7 @@ form a{
     position: relative;
     padding: 20px 0;
     display: flex;
+    
 }
 
 #info .contactInfo .box .icon{
@@ -845,19 +842,22 @@ form a{
     .inner-section{
         width: 100%;
     }
+
+}
+
+@media only screen and (max-width: 991px)
+{
     .contact{
         padding: 50px;
     }
-    .container{
+    #info{
         flex-direction: column;
     }
-    .container .contactInfo{
+    #info .contactInfo{
         margin-bottom: 40px;
     }
-    .container .contactInfo,
+    #info .contactInfo,
     .contactForm{
         width: 100%;
     }
 }
-
-

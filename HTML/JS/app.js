@@ -1,4 +1,24 @@
 
+ 
+        //-------------------------------js for toogle menu------------------------------------
+
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight == "0px";
+    
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+ 
+ 
+ 
+ 
  //-------------------------------Initialize Swiper Carousel------------------------------------
 
 var swiper = new Swiper(".mySwiper", {
@@ -19,25 +39,8 @@ var swiper = new Swiper(".mySwiper", {
   });
     
 
-
-
-        //-------------------------------js for toogle menu------------------------------------
-
-    var MenuItems = document.getElementById("MenuItems");
-    MenuItems.style.maxHeight == "0px";
-
-    function menutoggle(){
-        if(MenuItems.style.maxHeight == "0px")
-        {
-            MenuItems.style.maxHeight = "200px";
-        }
-        else
-        {
-            MenuItems.style.maxHeight = "0px";
-        }
-    }
-
-    
+ 
+  
     //-------------------js for toggle form-------------
 
 var LoginForm = document.getElementById("LoginForm");
