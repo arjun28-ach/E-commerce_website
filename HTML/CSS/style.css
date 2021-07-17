@@ -319,6 +319,22 @@ ul{
     display: none;
 }
 
+.social-icons a {
+    background-color: #f0f3f8;
+    color: #2494e9;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    /* margin-right: 8px; */
+    border-radius: 100%;
+  }
+  
+
+
+
            /*--------------------Swiper Carousel Styles-----------------------------*/
 
       .swiper-container {
